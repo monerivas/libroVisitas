@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Libro de Visitas</title>
   </head>
   <body>
     <div class="">
@@ -14,24 +14,29 @@
     <div class="" >
       <h2>Crear Articulo </h2>
       <button type="button" name="button" onclick="textoGrande();">Texto Grande</button>
-      <button type="button" name="button">Texto Mediano</button>
-      <button type="button" name="button">Texto Chico</button>
-      <button type="button" name="button">Color de Texto</button>
-      <button type="button" name="button">Color de Fondo</button>
-      <button type="button" name="button">Alinear Izquierda</button>
-      <button type="button" name="button">Centrar</button>
-      <button type="button" name="button">Alinear Derecha</button><br>
-      <textarea id="textoArea" name="name" rows="8" cols="80" onkeyup="obtenerTextPreview()"></textarea>
+      <button type="button" name="button" onclick="textoMediano();">Texto Mediano</button>
+      <button type="button" name="button" onclick="textoChico();">Texto Chico</button>
+      <button type="button" name="button" onclick="colorTexto();">Color de Texto</button>
+      <button type="button" name="button" onclick="colorFondo();">Color de Fondo</button>
+      <button type="button" name="button" onclick="alinearIzquierda();">Alinear Izquierda</button>
+      <button type="button" name="button" onclick="alinearCentro();">Centrar</button>
+      <button type="button" name="button" onclick="alinearDerecha();">Alinear Derecha</button><br>
+      <textarea id="textoArea" placeholder="Escribe tu articulo." rows="8" cols="80" onkeyup="obtenerTextPreview()"></textarea>
+    </div>
+    <div>
       <h3>contenido</h3>
       <p id="text" ></p>
-      <button type="button" name="button" onclick="enviar();">Enviar</button>
+      <button type="button" name="button" onclick="enviar1();">Enviar</button>
+      <button type="button" name="button" onclick="eliminarArticulo();">Eliminar articulo anterior</button>
+
     </div>
+
+
     <div class="aqui van unos botones de style">
 
     </div>
 
 
-    <script type="text/javascript" src= "libroVisitas.js">
-    </script>
+    <script type="text/javascript" src= "js/libroVisitas.js"></script>
   </body>
 </html>
